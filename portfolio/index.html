@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Add your meta description" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A website</title>
+
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+
+  <body>
+    <main class="main-style">
+      <header class="page-header page-nav">
+        <!--The <header> element is a semantic HTML tag that defines the introductory content for a page or a section.-->
+        <div class="header-content">
+          <!--A "div" is an HTML element used as a container to group other HTML elements together, allowing for easier styling and layout management with CSS.-->
+          <h1>MY PORTFOLIO</h1>
+          <p>INSPIRED BY THE 80S</p>
+        </div>
+      </header>
+
+      <nav class="page-nav">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#images">Image Gallery</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <section class="pink">
+        <section id="about" class="about-me container">
+          <div class="container-content">
+            <h2>About Me</h2>
+            <div class="content">
+              <p>
+                Hi, I'm Maskym Vakhovskyi. On paper, I'm a Computing for
+                Business student at DCU.<br />But that's just the "boring"
+                part.<br />
+                I have many occupations and hobbies, but the ones that really
+                make my blood stir are content creation, sports, and
+                neuroscience.
+              </p>
+              <p>
+                Throughout my short but eventful life, I've developed a diverse
+                set of skills, ranging from foundational knowledge in nutrition
+                and exercise to the creative and technical aspects of film
+                production.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+          <div class="container-content">
+            <h2>Work Experience</h2>
+            <div class="content">
+              <h3>Content Creator</h3>
+              <p>
+                As a content creator, I have honed my skills in video editing,
+                storytelling, and audience engagement. I have successfully
+                managed multiple social media platforms, creating content that
+                resonates with diverse audiences.<br />My experience includes
+                scripting, filming, and editing videos, as well as analyzing
+                viewer metrics to optimize content performance.
+              </p>
+
+              <h3>Sports Enthusiast and Coach</h3>
+              <p>
+                My passion for sports has led me to become a certified coach,
+                where I have developed training programs that focus on both
+                physical fitness and mental resilience.<br />I have worked with
+                athletes of various skill levels, helping them achieve their
+                personal bests through tailored coaching sessions and
+                motivational techniques.
+              </p>
+            </div>
+          </div>
+        </section>
+        <br /><br />
+
+        <section id="images" class="image-gallery container">
+          <div class="container-content">
+            <h2>Image Gallery</h2>
+            <div class="content-photos">
+              <figure class="an-image">
+                <img src="./images/me.paris.jpg" alt="me in paris" />
+                <figcaption class="image-caption"></figcaption>
+              </figure>
+
+              <figure class="an-image">
+                <img src="./images/pawn.shop.jpg" alt="my photo" />
+                <figcaption class="image-caption"></figcaption>
+              </figure>
+
+              <figure class="an-image">
+                <img src="./images/me.camera.jpg" alt="me with camera" />
+                <figcaption class="image-caption"></figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="contact" class="contact-me container">
+        <div class="container-content2">
+          <h2>Contact Me</h2>
+          <div class="content">
+            <form
+              action="https://formspree.io/[your email address goes here]"
+              method="post"
+            >
+              <p>
+                <label for="contact-name">YOUR NAME</label>
+                <input id="contact-name" type="text" name="contact-name" />
+              </p>
+              <p>
+                <label for="contact-email">YOUR EMAIL ADDRESS</label>
+                <input id="contact-email" type="email" name="contact-email" />
+              </p>
+              <p>
+                <label for="contact-phone">YOUR PHONE NUMBER</label>
+                <input id="contact-phone" type="tel" name="contact-phone" />
+              </p>
+              <p>
+                <label for="contact-message">YOUR MESSAGE</label>
+
+                <textarea id="contact-message" name="contact-message" rows="5">
+                </textarea>
+              </p>
+
+              <p>
+                <input
+                  class="send-message"
+                  type="submit"
+                  value="SEND MY MESSAGE"
+                />
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer id="footer-layout">
+        <p>
+          &copy; <a href="dcu.ie/">DCU 2023-2024</a>
+          <span class="footer-separator">&middot;</span>
+          <span class="footer-text">Maksym Vakhovskyi</span>
+          <span class="footer-separator">&middot;</span>
+          <span class="footer-text">This is student work</span>
+          <span class="footer-separator">&middot;</span>
+          <span class="footer-text"
+            >Lecturer<a href="http://www.computing.dcu.ie/~jkernan"
+              >Jane Kernan</a
+            ></span
+          >
+          <span class="footer-separator">&middot;</span>
+          <span class="footer-text"
+            ><a
+              href="http://validator.w3.org/check?uri=referer"
+              title="W3C HTML Validation Service"
+              >Valid html</a
+            ><br
+          /></span>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
